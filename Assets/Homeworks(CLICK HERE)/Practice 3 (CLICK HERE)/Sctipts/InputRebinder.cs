@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputRebinder : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Rebind(InputAction actionToRebind)
     {
-        
-    }
+        actionToRebind.Disable();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        actionToRebind.PerformInteractiveRebinding()
+            .WithControlsExcluding("<Mouse>/position") // фикс от ребаиндинга на поз мышиЫ
+            .OnComplete(operation =>
+            {
+                actionToRebind.Enable();
+                operation.Dispose(); //защита от утечки памяти
+
+                Debug.Log($"Перебинд кнопки - {actionToRebind.GetBindingDisplayString()}");
+            }).Start();
+
     }
 }
