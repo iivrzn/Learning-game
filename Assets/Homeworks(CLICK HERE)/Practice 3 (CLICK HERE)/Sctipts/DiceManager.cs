@@ -22,6 +22,7 @@ public class DiceManager : MonoBehaviour
     [SerializeField] private float maxTorque = 16f;
 
 
+
     private void Awake()
     {
         activeDices = new List<Dice>();
