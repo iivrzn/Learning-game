@@ -352,7 +352,9 @@ MonoBehaviour:
     _serializedList:
     - Key: 0
       Value: {fileID: 7669633632367131313, guid: f574b5885a0660e4d8c080f554b2d341, type: 3}
-  initialDices: 00000000000000000000000000000000000000000000000000000000
+    - Key: 1
+      Value: {fileID: 6198707348889392945, guid: a1127a7572356564c92ecd4a3230edb9, type: 3}
+  initialDices: 010000000100000001000000
   minForce: 5
   maxForce: 8
   minTorque: 10
