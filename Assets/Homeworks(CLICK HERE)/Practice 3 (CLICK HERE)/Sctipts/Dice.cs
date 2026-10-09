@@ -69,35 +69,34 @@ public class Dice : MonoBehaviour
             case DiceType.D6:
                 diceSides = new DiceSide[]
                 {
-                    new DiceSide(Vector3.up, 1),
-                    new DiceSide(Vector3.forward, 2),
-                    new DiceSide(Vector3.down, 3),
-                    new DiceSide(Vector3.back, 4),
-                    new DiceSide(Vector3.left, 5),
-                    new DiceSide(Vector3.right, 6)
+                    new DiceSide(Vector3.up, 6),
+                    new DiceSide(Vector3.forward, 3),
+                    new DiceSide(Vector3.down, 5),
+                    new DiceSide(Vector3.back, 1),
+                    new DiceSide(Vector3.left, 2),
+                    new DiceSide(Vector3.right, 4)
                 };
                 break;
             case DiceType.D4:
                 diceSides = new DiceSide[]
                 {
-                    new DiceSide(new Vector3( 0.57735f,  0.57735f,  0.57735f), 1),
+                    new DiceSide(new Vector3(-0.57735f,  0.57735f, -0.57735f), 1),
                     new DiceSide(new Vector3(-0.57735f, -0.57735f,  0.57735f), 2),
-                    new DiceSide(new Vector3(-0.57735f,  0.57735f, -0.57735f), 3),
-                    new DiceSide(new Vector3( 0.57735f, -0.57735f, -0.57735f), 4)
+                    new DiceSide(new Vector3( 0.57735f, -0.57735f, -0.57735f), 3),
+                    new DiceSide(new Vector3( 0.57735f,  0.57735f,  0.57735f), 4)
                 };
                 break;
             case DiceType.D8:
                 diceSides = new DiceSide[]
                 {
-                    new DiceSide(new Vector3( 0.57735f,  0.57735f,  0.57735f), 1),
-                    new DiceSide(new Vector3(-0.57735f,  0.57735f,  0.57735f), 2),
-                    new DiceSide(new Vector3(-0.57735f, -0.57735f,  0.57735f), 3),
-                    new DiceSide(new Vector3( 0.57735f, -0.57735f,  0.57735f), 4),
-
-                    new DiceSide(new Vector3(-0.57735f,  0.57735f, -0.57735f), 6),
-                    new DiceSide(new Vector3( 0.57735f,  0.57735f, -0.57735f), 5),
-                    new DiceSide(new Vector3( 0.57735f, -0.57735f, -0.57735f), 8),
-                    new DiceSide(new Vector3(-0.57735f, -0.57735f, -0.57735f), 7)
+                    new DiceSide(new Vector3(-0.57735f,  0.57735f, -0.57735f), 1),
+                    new DiceSide(new Vector3( 0.57735f,  0.57735f, -0.57735f), 2),
+                    new DiceSide(new Vector3( 0.57735f,  0.57735f,  0.57735f), 3),
+                    new DiceSide(new Vector3(-0.57735f,  0.57735f,  0.57735f), 4),
+                    new DiceSide(new Vector3(-0.57735f, -0.57735f,  0.57735f), 5),
+                    new DiceSide(new Vector3( 0.57735f, -0.57735f,  0.57735f), 6),
+                    new DiceSide(new Vector3( 0.57735f, -0.57735f, -0.57735f), 7),
+                    new DiceSide(new Vector3(-0.57735f, -0.57735f, -0.57735f), 8)
                 };
                 break;
             default:
