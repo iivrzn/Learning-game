@@ -10,7 +10,7 @@ using AYellowpaper.SerializedCollections;
 public class DiceManager : MonoBehaviour
 {
     [SerializeField] private SerializedDictionary<DiceType, Dice> prefabDict;
-    [SerializeField] private List<DiceType> initialDices = new List<DiceType> { DiceType.D6, DiceType.D6 };
+    [SerializeField] private List<DiceType> initialDices = new List<DiceType> { DiceType.D6, DiceType.D4 };
     private List<Dice> activeDices;
 
     [SerializeField] private float minForce = 1f;
