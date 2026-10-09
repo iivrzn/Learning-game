@@ -175,7 +175,7 @@ Transform:
   m_GameObject: {fileID: 154512223}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -50, y: 50, z: 0}
+  m_LocalPosition: {x: -18.2, y: 50, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,7 +268,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2693368, y: -0.6587661, z: 0.2743663, w: 0.6466901}
-  m_LocalPosition: {x: 39, y: 30.4, z: 1.2}
+  m_LocalPosition: {x: 20.7, y: 16.8, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -328,6 +328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365247756}
   - component: {fileID: 365247755}
+  - component: {fileID: 365247757}
   - component: {fileID: 365247754}
   m_Layer: 0
   m_Name: DiceManager
@@ -348,15 +349,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3fd8cf88713b94fbd4413ea1dbf5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DiceManager
+  rollActionRef: {fileID: -2665263195243506015, guid: e986ff9aab8cbda409df43b40fab6ff4, type: 3}
   prefabDict:
     _serializedList:
-    - Key: 0
-      Value: {fileID: 7669633632367131313, guid: f574b5885a0660e4d8c080f554b2d341, type: 3}
     - Key: 1
       Value: {fileID: 6198707348889392945, guid: a1127a7572356564c92ecd4a3230edb9, type: 3}
-  initialDices: 010000000100000001000000
-  minForce: 5
-  maxForce: 8
+    - Key: 0
+      Value: {fileID: 7669633632367131313, guid: f574b5885a0660e4d8c080f554b2d341, type: 3}
+    - Key: 2
+      Value: {fileID: 6198707348889392945, guid: 64fe76201612c874a8c1231e41b370ec, type: 3}
+  initialDices: 010000000000000002000000
+  minForce: 3
+  maxForce: 6
   minTorque: 10
   maxTorque: 16
 --- !u!114 &365247755
@@ -404,6 +408,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365247757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365247753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9076560a7a62e8445b5ff4908dd55572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputRebinder
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +764,7 @@ Transform:
   m_GameObject: {fileID: 1303485402}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 50, z: 50}
+  m_LocalPosition: {x: 0, y: 50, z: 1.1}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -810,7 +826,7 @@ Transform:
   m_GameObject: {fileID: 1500467932}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 50, y: 50, z: 0}
+  m_LocalPosition: {x: 17.5, y: 50, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -872,7 +888,7 @@ Transform:
   m_GameObject: {fileID: 1573704648}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 50, z: -50}
+  m_LocalPosition: {x: 0, y: 50, z: -25.4}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []

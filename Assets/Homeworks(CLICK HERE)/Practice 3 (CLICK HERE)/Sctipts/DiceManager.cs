@@ -9,6 +9,9 @@ using AYellowpaper.SerializedCollections;
 [RequireComponent(typeof(PlayerInput))]
 public class DiceManager : MonoBehaviour
 {
+    private InputRebinder rebinder;
+    [SerializeField] private InputActionReference rollActionRef;
+
     [SerializeField] private SerializedDictionary<DiceType, Dice> prefabDict;
     [SerializeField] private List<DiceType> initialDices = new List<DiceType> { DiceType.D6, DiceType.D4 };
     private List<Dice> activeDices;
@@ -22,6 +25,7 @@ public class DiceManager : MonoBehaviour
     private void Awake()
     {
         activeDices = new List<Dice>();
+        rebinder = GetComponent<InputRebinder>();
     }
     private void Start()
     {
@@ -37,6 +41,12 @@ public class DiceManager : MonoBehaviour
         {
             ThrowAll();
         }
+    }
+
+    [ContextMenu("Test Rebind")]
+    public void RollRebind()
+    {
+        rebinder.Rebind(rollActionRef.action);
     }
 
     public void SpawnDice(DiceType type)
