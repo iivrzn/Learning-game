@@ -175,7 +175,7 @@ Transform:
   m_GameObject: {fileID: 154512223}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -18.2, y: 50, z: 0}
+  m_LocalPosition: {x: -14.9, y: 50, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3fd8cf88713b94fbd4413ea1dbf5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DiceManager
+  rebinder: {fileID: 365247757}
   rollActionRef: {fileID: -2665263195243506015, guid: e986ff9aab8cbda409df43b40fab6ff4, type: 3}
   prefabDict:
     _serializedList:
@@ -358,7 +359,7 @@ MonoBehaviour:
       Value: {fileID: 7669633632367131313, guid: f574b5885a0660e4d8c080f554b2d341, type: 3}
     - Key: 2
       Value: {fileID: 6198707348889392945, guid: 64fe76201612c874a8c1231e41b370ec, type: 3}
-  initialDices: 010000000000000002000000
+  initialDices: 01000000000000000200000002000000010000000200000000000000
   minForce: 3
   maxForce: 6
   minTorque: 10
@@ -764,7 +765,7 @@ Transform:
   m_GameObject: {fileID: 1303485402}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 50, z: 1.1}
+  m_LocalPosition: {x: 0, y: 50, z: -0.7}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -826,7 +827,7 @@ Transform:
   m_GameObject: {fileID: 1500467932}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 17.5, y: 50, z: 0}
+  m_LocalPosition: {x: 14.2, y: 50, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
